@@ -823,10 +823,10 @@ Next, we will learn the homotopy axiom; that is if $f,g$ are two homotopic conti
 >     Let $f:X\to Y$ be a continuous map. Then we have
 >     $$
 >     \begin{align}
->     (f\times 1)_\#P_1^X(\sigma)&=(f\times 1)_\#(\sigma\times 1)_\#P_1^\Delta(\delta)\\
->     &=((f\circ\sigma)\times 1)_\#P_1^\Delta(\delta)\\
->     &=P_1^Y(f\circ\sigma)\\
->     &=P_1^Yf_\#(\sigma).
+>     (f\times 1)_\#P_0^X(\sigma)&=(f\times 1)_\#(\sigma\times 1)_\#P_0^\Delta(\delta)\\
+>     &=((f\circ\sigma)\times 1)_\#P_0^\Delta(\delta)\\
+>     &=P_0^Y(f\circ\sigma)\\
+>     &=P_0^Yf_\#(\sigma).
 >     \end{align}
 >     $$
 >     Similarly, by the universal property, we know $P_0$ is a natural transformation. 
@@ -890,8 +890,8 @@ Next, we will learn the homotopy axiom; that is if $f,g$ are two homotopic conti
 >     \begin{align}
 >     (f\times 1)_\#P_n^X(\sigma)&=(f\times 1)_\#(\sigma\times 1)_\# \beta_{n+1}\\
 >     &=((f\circ\sigma)\times 1)_\#\beta_{n+1}\\
->     &=P_1^Y(f\circ\sigma)\\
->     &=P_1^Yf_\#(\sigma).
+>     &=P_n^Y(f\circ\sigma)\\
+>     &=P_n^Yf_\#(\sigma).
 >     \end{align}
 >     $$
 >     Similarly, by the universal property, we know $P_n$ is a natural transformation. $\square$
@@ -1042,8 +1042,8 @@ Thus, to show $\psi_*$ is the inverse of $\phi_*$, it's sufficient to prove $\ph
 > $$
 > \begin{align}
 > \phi_*\psi(\gamma)&=\phi_*\psi(\sum_i m_i\sigma_i)\\
-> &=\phi_*(\prod_i(\overline{L_{\sigma(e_0)}*\sigma_i*L_{\sigma_i(e_1)}^{-1}})^{m_i})\\
-> &=\sum_im_i\operatorname{cls}(L_{\sigma(e_0)}+\sigma_i+L_{\sigma_i(e_1)}^{-1})\\
+> &=\phi_*(\prod_i(\overline{L_{\sigma_i(e_0)}*\sigma_i*L_{\sigma_i(e_1)}^{-1}})^{m_i})\\
+> &=\sum_im_i\operatorname{cls}(L_{\sigma_i(e_0)}+\sigma_i+L_{\sigma_i(e_1)}^{-1})\\
 > &=\operatorname{cls}\gamma+\sum m_i\operatorname{cls}(L_{\sigma_i(e_0)}-L_{\sigma_i(e_1)})\\
 > &=\operatorname{cls}\gamma.\ \square
 > \end{align}
